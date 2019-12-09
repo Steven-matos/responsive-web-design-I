@@ -63,12 +63,24 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* ENTIRE CONTAINER */
+
+body {
+   width: 950px;
+   margin: 0 auto; 
+}
+
+
 /* NAVBAR */
+
+.logo-mobile {
+    display: none;
+}
 
 nav {
 	display: flex;
-	justify-content: space-between;
-	margin-left: 8%;
+	justify-content: space-evenly;
+	/* margin-left: 8%; */
 	align-items: center;
 }
 
@@ -106,7 +118,7 @@ nav a {
 
 .divider {
 	border-top: 1px solid black;
-	margin: 60px;
+	margin-top: 60px;
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -134,12 +146,11 @@ nav a {
 }
 
 .container3 {
-	margin: 47px 25px 47px 0;
+	margin: 20px;
 }
 
 .divider2 {
 	border-bottom: 1px solid black;
-	margin: 0 60px;
 }
 
 /* CONTACT */
@@ -147,7 +158,7 @@ nav a {
 .contact-container {
 	display: flex;
 	flex-direction: column;
-	margin: 30px 60px;
+	margin-top: 30px
 }
 
 footer p {
@@ -223,4 +234,88 @@ footer p {
 .list li {
 	padding: 5px;
 	letter-spacing: 1px;
+}
+
+/* MEDIA QUIERES */
+
+@media (max-width: 800px) {
+
+    body {
+        width:700px;
+    }  
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    } 
+
+    .header-container {
+        justify-content: center;
+    }
+    
+    .middle-img {
+        width: 700px;
+        height: auto;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap-reverse;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .contact-container {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 500px){
+
+    body {
+        width: 400px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        border: 1px solid slategray;
+        padding: 30px 50%;
+    }
+
+    .divider {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container2 {
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .middle-img {
+        width: 30%;
+        height: auto;
+    }
+
+    .divider2 {
+        flex-direction: column;
+    }
+
+    .container3 {
+        padding: 0 20px;
+    }
 }
