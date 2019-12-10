@@ -138,6 +138,10 @@ nav a {
 	text-align: center;
 }
 
+.middle-img img {
+    width: 100%;
+}
+
 /* SECONDARY CONTENT */
 
 .section3 {
@@ -259,7 +263,7 @@ footer p {
     }
     
     .middle-img {
-        width: 700px;
+        width: 100%;
         height: auto;
         text-align: center;
     }
@@ -288,10 +292,15 @@ footer p {
         justify-content: center;
         align-items: center;
     }
+    nav a:nth-child(1) {
+        border-top: 1px solid slategray;
+    }
 
     nav a {
-        border: 1px solid slategray;
-        padding: 30px 50%;
+        border-bottom: 1px solid slategray;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
     }
 
     .divider {
@@ -307,7 +316,7 @@ footer p {
     }
 
     .middle-img {
-        width: 30%;
+        width: 100%;
         height: auto;
     }
 
