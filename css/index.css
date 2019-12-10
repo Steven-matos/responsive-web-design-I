@@ -65,13 +65,17 @@ h1, h2, h3, h4, h5 {
 
 /* ENTIRE CONTAINER */
 
-body {
+.big-container {
    width: 950px;
    margin: 0 auto; 
 }
 
 
 /* NAVBAR */
+
+.mobile-nav {
+    display: none;
+}
 
 .logo-mobile {
     display: none;
@@ -244,7 +248,7 @@ footer p {
 
 @media (max-width: 800px) {
 
-    body {
+    .big-container {
         width:700px;
     }  
 
@@ -283,20 +287,25 @@ footer p {
 
 @media (max-width: 500px){
 
-    body {
+    .big-container {
         width: 400px;
     }
 
-    nav {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    nav a:nth-child(1) {
+    .mobile-nav a:nth-child(1) {
         border-top: 1px solid slategray;
     }
 
-    nav a {
+    .mobile-nav a {
         border-bottom: 1px solid slategray;
         width: 100%;
         text-align: center;
